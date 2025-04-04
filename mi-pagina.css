@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    line-height: 2.0;
+    background-color: rgb(10, 82, 92);
+    font-size: 25px; /* Cambia este valor para ajustar el tamaño general */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.contenedor {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    gap: 20px; 
+    margin-bottom: 40px;
+}
+
+.foto {
+    width: 450px;
+    height: 450px;
+    
+    border-radius: 50%; /* Hace que los bordes sean redondos */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor redondeado */
+    margin-right: 20px; /* Espaciado entre la imagen y el contenido */
+}
+
+.foto-derecha {
+    width: 300px; /* Ajusta el tamaño de la imagen derecha */
+    height: auto; /* Mantiene la proporción de la imagen */   
+    margin-left: 200px; /* Reduce el margen izquierdo para moverla un poco más a la izquierda */
+    display: block; /* Asegura que se comporte como un bloque dentro del contenedor flex */
+}
+
+.info {
+    justify-content: left;
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex;
+    flex-direction: column; /* Asegura que los textos estén en columna */
+    gap: 10px; /* Espaciado entre los textos */
+}
+
+.foto1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.lis {
+    list-style: none;
+    font-size: 40px;
+    padding-left: 0;
+    list-style-type: decimal; /* Esto asegura que la lista tenga números */
+    padding-left: 20px;
+    justify-content: left;
+    
+}   
+
+.titulo {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.contenedor-gustos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.borde-contenedor {
+    border: 3px solid rgb(2, 19, 94); /* Borde alrededor del contenedor */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 40px; /* Espaciado inferior */
+    color: rgb(248, 248, 248); /* Asegura que el texto dentro sea blanco */
+}
+
+.contenedor-sobre-mi {
+    display: flex; /* Usa flexbox para alinear la imagen y el texto */
+    align-items: center; /* Centra verticalmente la imagen con el texto */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.imagen-sobre-mi {
+    width: 250px; /* Ajusta el ancho de la imagen */
+    height: 250px;
+    height: auto; /* Mantiene la proporción de la imagen */    
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+    margin-left: 200px;
+}
+
+.texto-sobre-mi {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.contenedor-acordeon {
+    max-height: 0; /* Oculta el contenido inicialmente */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    transition: max-height 0.3s ease-out; /* Animación suave al desplegar */
+}
+
+.contenedor-acordeon.activo {
+    max-height: 500px; /* Ajusta este valor según el contenido */
+}
+
+.titulo-acordeon {
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+    text-align: center;
+    background-color: rgb(23, 43, 46); /* Fondo del título */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0; /* Agrega un margen superior e inferior de 20px */
+}

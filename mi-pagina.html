@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="mi-pagina.css">
+</head>
+<body>
+    <div class="borde-contenedor">
+        <div class="contenedor">
+            <img src="img/foto-mia.jpg" alt="Mi Foto" class="foto">
+            <div class="info">
+                <h1 class="nombre">Sebastian Gonzales Garcia</h1>
+                <p class="contacto">Correo: gonzalesgarcia811@gmail.com</p>
+                <p class="contacto">id de steam: 1822472420</p>
+                <p class="contacto">Ubicación: Rafaela, Santa Fe, Argentina</p>
+            </div>
+            <img src="img/html.png" alt="Imagen derecha" class="foto-derecha">
+        </div>
+    </div>
+    <div class="borde-contenedor">
+        <div class="contenedor-sobre-mi">
+            <img src="img/sh.png" alt="Imagen Sobre Mí" class="imagen-sobre-mi">
+            <div class="texto-sobre-mi">
+                <h2 class="titulo">Sobre mi</h2>
+                <p>
+                    soy estudiante de la carrera produccion de videojuegos y entretenimiento digital, me caigo a pedazos dibujando, me defiendo programando y nose nada de musica.
+                </p>
+            </div>
+        </div>
+    </div>
+    <h2 class="titulo-acordeon">Mis gustos</h2>
+    <div class="contenedor-acordeon">
+        <div class="contenedor-gustos">
+            <ol class="lis">
+                <li>anime</li>
+                <li>saga del borderlands</li>
+                <li>la coca cola zero</li>
+                <li>la serie the bing bang theory</li>
+            </ol>
+            <img src="img/gustos.png" alt="Mi Foto" class="foto1">
+        </div>
+    </div>
+    <script>
+        document.querySelector('.titulo-acordeon').addEventListener('click', function () {
+            const acordeon = document.querySelector('.contenedor-acordeon');
+            acordeon.classList.toggle('activo');
+        });
+    </script>
+</body>
+</html>
